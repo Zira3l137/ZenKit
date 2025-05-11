@@ -97,9 +97,15 @@ namespace zenkit {
 
 		/// \brief The name of this mesh
 		std::string name {};
+		void set_name(std::string const& name) {
+			this->name = name;
+		}
 
 		/// \brief The bounding box of this mesh.
 		AxisAlignedBoundingBox bbox {};
+		void set_bbox(Vec3 const& min, Vec3 const& max) {
+			this->bbox = AxisAlignedBoundingBox {min, max};
+		}
 
 		/// \brief The oriented bbox tree of this mesh.
 		OrientedBoundingBox obb {};

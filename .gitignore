@@ -8,5 +8,8 @@
 /data/
 /site/
 
+/compile_commands.json
+
 *.proprietary.*
 *.env
+
